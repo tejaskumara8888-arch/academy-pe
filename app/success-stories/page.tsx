@@ -10,42 +10,42 @@ const stories = [
     role: "Backoffice @ AMS Pvt Ltd",
     quote:
       "With the dedicated guidance from Academy P&E, I seamlessly transitioned into a stable corporate environment. The training refined my administrative skills, landing me a vital role at AMS Pvt Ltd.",
-    image: "/images/success/pritam.jpeg",
+    image: "/images/success/pritam-pic.jpg",
   },
   {
     name: "Pinky Chakraborty",
     role: "Work From Home @ Techno Services",
     quote:
       "Academy P&E understood my need for flexibility without compromising on career growth. They connected me with Techno Services, where I now manage operations remotely with complete confidence.",
-    image: "/images/success/pinky.jpeg",
+    image: "/images/success/pinky-pic.jpg",
   },
   {
     name: "Jaya Guin",
     role: "Backoffice @ DEB Infotech",
     quote:
       "The comprehensive support from the Academy equipped me with the organizational skills required for the modern IT sector. I am now thriving in my backoffice role at DEB Infotech.",
-    image: "/images/success/souvik.jpeg",
+    image: "/images/success/souvik-pic.jpg",
   },
   {
     name: "Monojit Sarkar",
     role: "Backoffice @ Boichitra India",
     quote:
       "Finding the right fit was crucial for me. Academy P&E's tailored placement approach bridged the gap between my potential and the industry, securing my position at Boichitra India.",
-    image: "/images/success/monojit.jpeg",
+    image: "/images/success/monojit-pic.jpg",
   },
   {
     name: "Rohan Bhattacharya",
     role: "Customer Executive @ PS Technology",
     quote:
       "Communication and client relations are my core strengths, and Academy P&E helped me channel them professionally. I now drive customer success at PS Technology Pvt Ltd.",
-    image: "/images/success/rohan.jpeg",
+    image: "/images/success/rohan-pic.jpg",
   },
   {
     name: "Puja Sahoo",
     role: "Nurse @ Rista Foundation",
     quote:
       "The Academy's network extends beyond traditional corporate roles. They helped me secure a fulfilling position in mental health where I can provide essential care and make a real difference.",
-    image: "/images/success/puja.jpeg",
+    image: "/images/success/puja-pic.jpg",
   },
 ];
 
