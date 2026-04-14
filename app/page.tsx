@@ -54,9 +54,9 @@ export default function Home() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", border: "1px solid var(--border)", backgroundColor: "white", boxShadow: "0 25px 50px rgba(0,0,0,0.1)" }}>
             {[
-              { icon: "lucide:zap", title: "Tech & Digital Solutions", desc: "Specialized technical staffing for the modern digital landscape." },
-              { icon: "lucide:activity", title: "Engineering & Industrial Operations", desc: "Skilled technical personnel for manufacturing, core engineering, and logistics." },
-              { icon: "lucide:shield", title: "Corporate, Finance & Front-End Retail", desc: "Back-office support and customer-facing professionals to drive business growth." },
+              { icon: "lucide:zap", title: "Start Your Career Today", desc: "Immediate job openings across multiple industries. No long waiting — apply now and get placed fast." },
+              { icon: "lucide:activity", title: "Skilled & High-Paying Jobs", desc: "Get access to verified companies hiring for technical, industrial, and operations roles with competitive salaries." },
+              { icon: "lucide:shield", title: "Office, Retail & Customer Roles", desc: "Secure jobs in corporate offices, retail, and service sectors. Freshers and experienced candidates welcome." },
             ].map((card, i) => (
               <ServiceCard key={i} {...card} border={i < 2} />
             ))}
