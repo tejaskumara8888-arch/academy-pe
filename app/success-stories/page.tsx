@@ -20,7 +20,7 @@ const stories = [
     image: "/images/success/pinky.jpeg",
   },
   {
-    name: "Souvik Das",
+    name: "Jaya Guin",
     role: "Backoffice @ DEB Infotech",
     quote:
       "The comprehensive support from the Academy equipped me with the organizational skills required for the modern IT sector. I am now thriving in my backoffice role at DEB Infotech.",
@@ -191,8 +191,8 @@ function StoryCard({
         transition: "box-shadow 0.5s",
       }}
       onMouseOver={(e) =>
-        ((e.currentTarget as HTMLElement).style.boxShadow =
-          "0 25px 50px rgba(0,0,0,0.15)")
+      ((e.currentTarget as HTMLElement).style.boxShadow =
+        "0 25px 50px rgba(0,0,0,0.15)")
       }
       onMouseOut={(e) =>
         ((e.currentTarget as HTMLElement).style.boxShadow = "none")
