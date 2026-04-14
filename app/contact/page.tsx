@@ -15,7 +15,7 @@ type FormData = {
 type Status = "idle" | "loading" | "success" | "error";
 
 export default function ContactPage() {
-  const [form, setForm] = useState<FormData>({ name: "", email: "", phone: "", subject: "Digital Transformation", message: "" });
+  const [form, setForm] = useState<FormData>({ name: "", email: "", phone: "", subject: "Job Application", message: "" });
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -36,7 +36,7 @@ export default function ContactPage() {
       const data = await res.json();
       if (res.ok) {
         setStatus("success");
-        setForm({ name: "", email: "", phone: "", subject: "Digital Transformation", message: "" });
+        setForm({ name: "", email: "", phone: "", subject: "Job Application", message: "" });
       } else {
         setStatus("error");
         setErrorMsg(data.error || "Something went wrong. Please try again.");
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   </div>
                   <div style={{ display: "flex", flexDirection: "column" }}>
                     <label style={labelStyle}>Phone Number</label>
-                    <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+1 (555) 000-0000" style={inputStyle}
+                    <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+91 0000000000" style={inputStyle}
                       onFocus={(e) => ((e.target as HTMLElement).style.borderColor = "var(--primary)")}
                       onBlur={(e) => ((e.target as HTMLElement).style.borderColor = "var(--border)")} />
                   </div>
@@ -135,9 +135,9 @@ export default function ContactPage() {
                     <select name="subject" value={form.subject} onChange={handleChange} style={{ ...inputStyle, appearance: "none" }}
                       onFocus={(e) => ((e.target as HTMLElement).style.borderColor = "var(--primary)")}
                       onBlur={(e) => ((e.target as HTMLElement).style.borderColor = "var(--border)")}>
-                      <option>Digital Transformation</option>
-                      <option>Enterprise AI</option>
-                      <option>Cybersecurity</option>
+                      <option>Job Application</option>
+                      <option>Digital Portfolio Creation</option>
+                      <option>Job Placement Support</option>
                       <option>General Inquiry</option>
                     </select>
                   </div>
@@ -173,9 +173,9 @@ export default function ContactPage() {
                 <h3 style={{ fontSize: "1.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--secondary)", marginBottom: "2rem" }}>Global Headquarters</h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
                   {[
-                    { icon: "lucide:map-pin", label: "Location", lines: ["123 Innovation Drive, Silicon Valley", "California, CA 94025, USA"] },
-                    { icon: "lucide:phone", label: "Call Us", lines: ["+1 (800) PROGRESS", "+1 (555) 123-4567"] },
-                    { icon: "lucide:mail", label: "Email", lines: ["contact@academy-pe.com", "careers@academy-pe.com"] },
+                    { icon: "lucide:map-pin", label: "Location", lines: ["H8CX+5W5, Binoy Badal Dinesh Bag S, Lal Dighi, Lal Bazar, Kolkata, West Bengal 700001"] },
+                    { icon: "lucide:phone", label: "Call Us", lines: ["+91 (033 6598 1654)", "+91 (7044903484)"] },
+                    { icon: "lucide:mail", label: "Email", lines: ["establishmentacademy@gmail.com"] },
                   ].map(({ icon, label, lines }) => (
                     <div key={label} style={{ display: "flex", gap: "1.5rem" }}>
                       <div style={{ width: "3rem", height: "3rem", backgroundColor: "white", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", flexShrink: 0 }}>
@@ -192,7 +192,7 @@ export default function ContactPage() {
               </div>
 
               <div style={{ position: "relative", height: "16rem", border: "1px solid var(--border)", overflow: "hidden", cursor: "pointer" }}
-                onClick={() => window.open("https://maps.google.com/?q=Silicon+Valley+CA", "_blank")}>
+                onClick={() => window.open("https://www.google.com/maps/place/Dalhousie/@22.5704033,88.3472845,17z/data=!3m1!4b1!4m6!3m5!1s0x3a0277161c03bd13:0x9a92e916489a1a28!8m2!3d22.5703984!4d88.3498594!16s%2Fg%2F11sb4ymjx0?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D", "_blank")}>
                 <Image
                   src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=800"
                   alt="Map View"

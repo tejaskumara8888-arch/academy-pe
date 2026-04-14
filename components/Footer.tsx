@@ -62,7 +62,7 @@ export default function Footer() {
           <div>
             <h4 style={{ fontSize: "1rem", fontWeight: 700, marginBottom: "2rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>Services</h4>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "1rem" }}>
-              {["Digital Marketing", "Cloud Services", "AI & Data Science", "Cybersecurity", "Engineering"].map((item) => (
+              {["Job Assitance", "Training", "Job Recruitment", "Digital Portfolio Creation", "Soft Skill Training"].map((item) => (
                 <li key={item}><a href="#" style={{ color: "#9ca3af", textDecoration: "none", transition: "color 0.2s" }}
                   onMouseOver={(e) => ((e.target as HTMLElement).style.color = "var(--primary)")}
                   onMouseOut={(e) => ((e.target as HTMLElement).style.color = "#9ca3af")}>{item}</a></li>
